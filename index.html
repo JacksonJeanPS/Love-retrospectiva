@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stars.css">
+    <title>Nossa História 💫</title>
+</head>
+
+<body>
+    <!-- Canvas do céu estrelado -->
+    <canvas id="starCanvas"></canvas>
+
+    <!-- Navegação por bolinhas -->
+    <div class="nav-dots" id="navDots"></div>
+
+    <!-- Tela de Loading -->
+    <div id="loading">
+        <div class="spinner"></div>
+        <p>Carregando...</p>
+        <p>Preparando sua retrospectiva...</p>
+    </div>
+
+    <!-- Conteúdo -->
+    <section class="stars">
+        <div class="fade-in">
+            <h1>15 de setembro de 2022</h1>
+            <p>Alguns encontros mudam nossas vidas para sempre...</p>
+        </div>
+    </section>
+
+    <section class="stars">
+        <div class="fade-in">
+            <p>Cada momento ao seu lado é uma memória eterna...</p>
+        </div>
+    </section>
+
+    <section class="stars">
+        <div class="fade-in">
+            <p>Nossa história é feita de pequenos instantes mágicos...</p>
+        </div>
+    </section>
+
+    <section class="stars">
+        <div class="fade-in">
+            <p>Deslize para reviver nossa jornada...</p>
+        </div>
+    </section>
+
+    <section class="gradient">
+        <div class="fade-in">
+            <h1>Nossa História</h1>
+            <p>Uma jornada de amor e momentos inesquecíveis</p>
+
+            <div class="solar">
+                <div class="sun"></div>
+
+                <!-- Órbitas e planetas -->
+                <div class="orbit" style="--orbit-radius:60px;"></div>
+                <div class="planet" style="--orbit-radius:60px; --size:12px; --speed:6s; --color:#00bcd4;"></div>
+
+                <div class="orbit" style="--orbit-radius:100px;"></div>
+                <div class="planet" style="--orbit-radius:100px; --size:16px; --speed:10s; --color:#ff9800;"></div>
+
+                <div class="orbit" style="--orbit-radius:140px;"></div>
+                <div class="planet" style="--orbit-radius:140px; --size:20px; --speed:16s; --color:#8bc34a;"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="gradient">
+        <div class="fade-in">
+            <p>Que tal dar play na música que me faz reviver nossa história?</p>
+            <iframe src="https://www.youtube.com/embed/eRnIks59Pjw?si=zN2pq4m7i7heEMXw" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="instructions">Dê play na música e continue rolando para reviver nossos momentos especiais 🎶</p>
+        </div>
+    </section>
+
+    <section class="stars-bg">
+        <h1>Nossa história começou na</h1>
+        <h2>primavera 🌸</h2>
+        <p>Assim como a primavera renasce, nosso amor floresce a cada novo amanhecer.</p>
+    </section>
+
+    <section class="stars-bg" aria-label="Cena com lua crescente" style="--bg:#000;">
+        <h1>Naquela noite, a lua estava</h1>
+        <h2 class="gradiente">Minguante &#127764;</h2>
+        <div class="moon waxing" role="img" aria-label="Lua crescente"></div>
+        <p>O brilho delicado da lua crescente testemunhou nosso encontro.</p>
+    </section>
+
+    <section class="stars-bg">
+        <h1>Nosso signo é &#9806;</h1>
+        <h2>Libra</h2>
+        <div class="signo-container">
+            <img src="https://portaledicase.com/wp-content/uploads/2023/09/Libra-1-1.jpg" alt="Símbolo de Libra">
+        </div>
+        <div class="cards">
+            <div class="card">Elemento: Ar 🌬️</div>
+            <div class="card">Regente: Vênus 💫</div>
+        </div>
+        <br>
+        <p>Nossa história nasceu sob o signo de Libra, trazendo equilíbrio, harmonia e amor.</p>
+    </section>
+
+    <section class="stars-bg">
+        <div class="photo-card">
+            <img src="/imagens/foto1.jpeg"
+                alt="Foto do casal">
+        </div>
+        <h1>Capítulo 1</h1>
+        <h2>Nosso pra sempre ❤️</h2>
+        <p>Meu amor, cada dia ao seu lado é uma nova página escrita com amor e cumplicidade.</p>
+    </section>
+
+    <section class="stars-bg">
+        <div class="photo-card">
+            <h1>Nossa história continua...</h1>
+            <p>Cada dia é uma nova oportunidade de escrever mais capítulos juntos.</p>
+            <h2>Dias lado a lado</h2>
+            <div class="contador" id="contador">Calculando...</div>
+            <br>
+            <button id="loveBtn">💖 Te amo!</button>
+        </div>
+    </section>
+
+    <!-- <script src="stars.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
