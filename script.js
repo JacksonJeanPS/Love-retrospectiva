@@ -182,7 +182,7 @@ button.addEventListener("click", () => {
 });
 
 // ===== CONTADOR =====
-const dataInicio = new Date("2022-09-15T00:00:00").getTime();
+const dataInicio = new Date("2018-09-30T00:00:00").getTime();
 const contadorEl = document.getElementById("contador");
 setInterval(() => {
     const agora = new Date().getTime();
